@@ -1,56 +1,45 @@
-/*     // Function to set the active link based on scroll position
-    window.addEventListener("scroll", () => {
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll(".navbar a");
 
-        let currentSection = "";
 
-        // Find the current section based on scroll position
-        sections.forEach(section => {
-        const sectionTop = section.offsetTop - 80; // Offset to align with navbar height
-        if (window.scrollY >= sectionTop) {
-            currentSection = section.getAttribute("id");
+  function toggleMode() {
+    document.body.classList.toggle("light-mode");
+}
+
+  // JavaScript for toggle functionality
+const menuIcon = document.getElementById("menu-icon");
+const navbar = document.querySelector(".navbar");
+
+menuIcon.addEventListener("click", () => {
+    navbar.classList.toggle("active"); // Toggles 'active' class on the navbar
+});
+
+
+let section = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = ()=>{
+    section.forEach(sec =>{
+        let top = window.scrollY;
+        let Offset = sec.offsetTop - 250;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= Offset && top < Offset + height){
+            navLinks.forEach(links =>{
+                links.classList.remove('active');
+                document.querySelector('.navbar a[href*="' + id + '"]').classList.add('active');
+            })
         }
-        });
-
-        // Add 'active' class to the navbar link of the current section
-        navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").includes(currentSection)) {
-            link.classList.add("active");
-        }
-        });
-    });
- */
-    function toggleMode() {
-        document.body.classList.toggle("light-mode");
-    }
+    })
+}
 
 
-    let menuIcon = document.querySelector('#menu-icon');
-    let navbar = document.querySelector('.navber');
+// Function to open the popup with the specific image
+function openPopup(imageSrc) {
+  document.getElementById("popup-img").src = imageSrc;
+  document.getElementById("popup").style.display = "flex";
+}
 
-    let section = document.querySelectorAll('section');
-    let navLinks = document.querySelectorAll('header nav a');
-
-    window.onscroll = ()=>{
-        section.forEach(sec =>{
-            let top = window.scrollY;
-            let Offset =sec.offsetTop - 150;
-            let height = sec.offsetHeight;
-            let id =sec.getAttribute('id');
-
-            if(top >= Offset && top < Offset + height){
-                navLinks.forEach(links =>{
-                    links.classList.remove('active');
-                    document.querySelector('header nav a [href*=' + id +' ]' ).classList.add
-                    ('active');
-                })
-            }
-        })
-    }
-
-    menuIcon.onclick = () =>{
-        menuIcon.classList.toggle('bx-x');
-        navbar.classList.toggle('active');
-    }
+// Function to close the popup
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
