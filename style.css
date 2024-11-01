@@ -21,6 +21,8 @@
     --main-color: #f60b0b;
     --black: #000000;
     --white: rgb(255, 255, 255);
+    --BG-img: url('image/brd.avif');
+
   }
 
   /* Light mode overrides */
@@ -30,12 +32,13 @@
     --text-color: #333333;
     --main-color: #744dff;
     --black: #ffffff;
+    --BG-img: url('image/222.jpg');
   }
 
 html{
     font-size: 60%;
     overflow-x: hidden ;
-    scroll-behavior: smooth;
+   /*  scroll-behavior: smooth; */
 }
 body{
     background: var(--bg-color);
@@ -80,8 +83,8 @@ body{
 
 .navbar a:hover,
 .navbar a.active{
-color: var(--main-color);
-border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
 }
 
 #menu-icon{
@@ -111,7 +114,7 @@ section{
 }
 
 span{
-    color: var(--main-color);
+    color: #C40C0C;
 }
 
 .logo span{
@@ -121,11 +124,11 @@ span{
 .home-content h3{
     margin-bottom: 2rem;
     margin-top: 1rem;
-    font-size: 3.5rem;
+    font-size: 5.5rem;
 }
 
 .home-content h1{
-    font-size: 7rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
@@ -148,6 +151,11 @@ span{
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
+    text-align: left;
+}
+.home-content p span{
+    font-size: 2rem;
+    font-weight: 900;
 }
 .social-icons a{
     display: inline-flex;
@@ -215,7 +223,7 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content: "Web Developer";
+    content: "LAGUNILLA";
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -238,23 +246,23 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "ROTC Officer";
+        content: "LAGUNILLA";
     }
     21%,
     40%{
-        content: "IT Student";
+        content: "LAGUNILLA";
     }
     40%,
     60%{
-        content: "CS:GO Pro Player" ;
+        content: "LAGUNILLA" ;
     }
     61%,
     80%{
-        content: "Nangungulila " ;
+        content: "LAGUNILLA" ;
     }
     81%,
     100%{
-        content: "kay Lea ";
+        content: "LAGUNILLA";
     }
 }
 @keyframes typing{
@@ -409,7 +417,7 @@ span{
 
 
 .projects{
-    background: url(image/brd.avif)center no-repeat ;
+    background: var(--BG-img) no-repeat ;
     background-size: cover;
 }
 .projects-box{
@@ -448,6 +456,7 @@ span{
 .project-card img{
     max-width: 18vw;
     object-fit: cover;
+    
 }
 .project-card h3{
     font-size: 3rem;
@@ -496,17 +505,17 @@ span{
     bottom: 0;
     width: 100%;
     padding: 40px p;
-    background-color:  var(--second-bg-color);
+    background: linear-gradient(var(--main-color), var(--bg-color) 50% );
 }
 .footer .social{
     text-align: center;
     padding: 25px;
-    color: var(--main-color);
+    color: var(--bg-color);
 }
 .footer .social a{
     font-size: 25px;
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
+    color: var(--bg-color);
+    border: 2px solid var(--bg-color);
     width: 42px;
     height: 42px;
     line-height: 42px;
@@ -518,6 +527,7 @@ span{
 }
 .footer .social a:hover{
     transform: scale(1.2) translateY(-10px);
+    background: linear-gradient(var(--main-color), var(--bg-color) );
     background-color: var(--main-color);
     color: var(--black);
     box-shadow: 0 0 25px var(--main-color);
@@ -574,7 +584,7 @@ span{
     section{
         padding: 10rem 3% 2rem;
     }
-    .contect form{
+    .contact form{
         flex-direction: column;
     }
     .footer{
@@ -592,21 +602,22 @@ span{
         right: 0;
         width: 50%;
         padding: 1rem 3%;
-        background: rgba(0, 0, 0, 0.8);
+        background:  rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(20px);
+        border-top-left-radius: 2rem;
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
-        display: none;
+        display: none; 
     }
-    .navbar .active{
-        display: block;
+    .navbar.active {
+        display: block; /* Show navbar when active */
     }
     .navbar a{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
-        color: var(--white);
+        color: white;
     }
     .home{
         flex-direction: column-reverse;
@@ -655,7 +666,8 @@ span{
         grid-template-columns: repeat(1,1fr);
     }
     .projects-box img{
-        min-width: 42rem;
+        min-width: 30rem;
+        max-height: 51vw;
     }
 }
 
@@ -665,6 +677,67 @@ span{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Popup overlay */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+      }
+  
+      /* Popup image style */
+      .popup-img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+  
+      /* Close button style */
+      .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2em;
+        color: white;
+        cursor: pointer;
+      }
 
 
 
