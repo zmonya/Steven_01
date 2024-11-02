@@ -19,10 +19,14 @@
             box-sizing: border-box;
         }
 
+        :root{
+            --BG-img: url('../image/ab67616d00001e0249738edb1e3a2e2dc8942ba9.jpg');
+        }
         .album-cover {
             width: 64px;
             height: 64px;
-            background-color: #fff;
+            background: var(--BG-img);
+            object-fit: cover;
             border-radius: 50%;
             margin-right: 12px;
         }
@@ -91,7 +95,9 @@
 <body>
 
 <div class="audio-player">
-    <div class="album-cover"></div>
+    <div class="album-cover"> 
+        
+    </div>
     <div class="player-controls">
         <div class="song-info">
             <div class="song-title">Hoodie</div>
