@@ -21,7 +21,7 @@
     --main-color: #f60b0b;
     --black: #000000;
     --white: rgb(255, 255, 255);
-    --BG-img: url('image/brd.avif');
+    --BG-img: url('image/REDAA.jpg');
 
   }
 
@@ -32,6 +32,7 @@
     --text-color: #333333;
     --main-color: #744dff;
     --black: #ffffff;
+    --white: rgb(0, 0, 0);
     --BG-img: url('image/222.jpg');
   }
 
@@ -379,10 +380,11 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--main-color);
+    background-color: var(--second-bg-color);
     height: 500px;
     border-radius: 3rem;
-    border: 5px solid transparent;
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
@@ -505,7 +507,7 @@ span{
     bottom: 0;
     width: 100%;
     padding: 40px p;
-    background: linear-gradient(var(--main-color), var(--bg-color) 50% );
+    background: linear-gradient(var(--second-bg-color), var(--bg-color) 50% );
 }
 .footer .social{
     text-align: center;
@@ -514,8 +516,8 @@ span{
 }
 .footer .social a{
     font-size: 25px;
-    color: var(--bg-color);
-    border: 2px solid var(--bg-color);
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
     width: 42px;
     height: 42px;
     line-height: 42px;
