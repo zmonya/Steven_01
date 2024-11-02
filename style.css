@@ -389,6 +389,7 @@ span{
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
+
 .service-box:hover{
     background: var(--second-bg-color);
     color: var(--main-color);
@@ -436,8 +437,8 @@ span{
     max-width: 450px;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(30px);
-    border: 2px solid var(--main-color);
-    border-radius: 5rem;
+/*     border: 2px solid var(--main-color);
+    border-radius: 5rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -449,6 +450,9 @@ span{
     cursor: pointer;
     box-shadow: 0 0 5px var(--main-color);
     transition: 0.4s ease;
+    /* background-color: var(--second-bg-color); */
+    border-radius: 3rem;
+    border: 5px solid var(--main-color);
 }
 .project-card:hover{
     box-shadow: 0 0 25px var(--main-color),
@@ -466,6 +470,7 @@ span{
 }
 .project-card p{
     font-size: 1.6rem;
+    text-align: justify;
 }
 
 .contact{
