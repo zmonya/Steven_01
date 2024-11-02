@@ -43,3 +43,13 @@ function openPopup(imageSrc) {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
+
+
+
+
+
+
+
+
+
+
