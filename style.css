@@ -22,7 +22,7 @@
     --black: #000000;
     --white: rgb(255, 255, 255);
     --BG-img: url('image/REDAA.jpg');
-
+    --span:#C40C0C;
   }
 
   /* Light mode overrides */
@@ -34,6 +34,7 @@
     --black: #ffffff;
     --white: rgb(0, 0, 0);
     --BG-img: url('image/222.jpg');
+    --span:#0C3CC4;
   }
 
 html{
@@ -633,11 +634,12 @@ span{
         justify-content: center;
         text-align: center;
     }
+    
     .home-content h3{
-        font-size: 2.6rem;
+        font-size: 5rem;
     }
     .home-content h1{
-        font-size: 8rem;
+        font-size: 3rem;
         margin-top: 3rem;
     }
     .home-content p{
@@ -652,14 +654,21 @@ span{
         flex-direction: column-reverse;
         padding: 10rem 9% 10rem;
     }
+    .about h2{
+        font-size: 3rem;
+    }
+    .about h3 {
+        font-size: 1rem;
+    }
     .about .heading{
-        margin: 3rem 0;
+        margin: 1rem 0;
     }
     .about img{
         width: 50vw;
     }
     .services h2{
         margin-bottom: 3rem;
+        
     }
     .services-container{
         grid-template-columns: repeat(1,1fr);
