@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html>
+<title>BULSU</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+
+
+<style>
+  body{
+    height:50vh;
+    text-align: left;
+  }
+</style>
+
+
+<header class="header">
+        
+    <a href="#home" class="logo">
+        <img src="image/Matilak___.png" style="height: 5rem ;" onclick="toggleMode()">
+        <!-- scarlett <span>Davis</span> -->
+    </a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <!-- <a href="#contact">contact</a> -->
+        
+    </nav>
+
+</header>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+ 
+  
+<!-- Sidebar/menu -->
+<!-- <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="N.JPG" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>MY PORTFOLIO</b></h4>
+    <p class="w3-text-grey">by Alexis Nicole Abraham</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#dump photos" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-photo w3-margin-right"></i>DUMP PHOTOS</a>
+    
+  </div>
+</nav> -->
+
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!--     <div class="w3-main" style="margin-left:300px"> -->
+
+  
+  
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="image/02.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Kein Fiel Maizo #6</b></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="image/02.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Gilbert Cenabre #10</b></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="image/02.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Ian Repancol #12</b></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="image/02.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Aldrin Quiroz #9</b></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="image/02.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Allen Bacolor #1</b></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="image/02.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Kurt Icasiano #5</b></p>
+        <p></p>
+      </div>
+
+    
+        <img src="image/02.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container w3-white">
+          <p><b>Andrei Miguel</b></p>
+
+        
+
+    </div>
+  </div>
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About </b></h4>
+        <p>
+        Ginawa ko itong code na to  as an diary,gusto ko lang ilagay dito yung mga taong nakilala ko noong October 02 2023.
+        Unexpected talaga na makilala ko kayo that night kasi,pumunta lang kami ng school nun para bumuli ng shawarma at milktea kasi hindi kami nag lunch
+        tapos napag desisyonan namin pumunta ng court that time.So yun nadatnan namin may nag lalaro na ng Volleybal kaya nanood na kami.Then yun pinag pustahan naming mag kakaibigan
+        yung mga nag larong una bago yung game niyo.Then nung natapos na Nalaman namin REGION3 vs. CAGAYAN so yun na nga.Unang laban palang
+        ang intense na agad,ang galing niyo sobra.Then yung una ko na nanotice is si 1 si BACOLOR then nung pag pasok ni MAIZO na amaze ako sa skills niya ang galing kasi.
+        Then sabi ko nun sa mga kaibigan ko anliit niya pero ang liksi(sorry sa word ko maizo,matangkad ka naman eh pag d mo kasama mga ka teammates mo)so yun na believe ako kaya ikaw yung manok ko nun
+        (manok means pambato)as in hanggang matapos yung game ikaw pinapanood ko,wala akong masabi kundi ang galing mo habulin yung Bola THE BEST LIBERO.Si GILBERT naman na notice ko din siya
+        kasi ang cute niya hehehe tas ang galing niya din humabol ng bola,same kayo ni maizo ang liliksi niyo.Si IAN ang galing niya mag Spike tas ang cute niya din.Si ICASIANO AT QUIROZ na notice ko na sila 
+        bago mag start yung game eh kasi manok kayo nung 2 kong kaibigan kaya yun.Tas si MIGUEL na notice ko din siya that night.Wala akong masabi masyado kasi isa lang sasabihin ko na ang gagaling niyong lahat........
+        SANA MAKITA KO KAYO AT MAPANOOD ULE GUYS...
+        </p>
+    <hr>
+    <br>
+    <br>
+
+    <style>
+
+        /* Slideshow container */
+        .slideshow-container {
+          position: relative;
+          background: #d3ded5b8;
+        }
+        
+        /* Slides */
+        .mySlides {
+          display: none;
+          padding: 80px;
+          text-align: center;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -30px;
+          padding: 16px;
+          color: #888;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          position: absolute;
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgb(42, 40, 40);
+          color: white;
+        }
+        
+        /* The dot/bullet/indicator container */
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        /* Add a background color to the active dot/circle */
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Add an italic font style to all quotes */
+        q {font-style: italic;}
+        
+        /* Add a blue color to the author */
+        .author {color: rgb(0, 0, 0);}
+        </style>
+        </head>
+        <body>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides">
+          <q>I AM THE CREATOR OF MY OWN REALITY</q>
+          
+        </div>
+        
+        <div class="mySlides">
+          <q>TAKE ME BACK TO THE NIGHT WE MET</q>
+          
+        </div>
+        
+        <div class="mySlides">
+          <q>SOMETIMES YOU MISS THE MEMORIES...NOT THE PERSON.</q>
+        </div>
+        
+        <div class="mySlides">
+          <q>THE MOST PAINFUL GOODBYES ARE THE ONES UNEXPLAINED</q>
+        </div>
+      
+        <div class="mySlides">
+          <q>Thankyou for using me as your Temporary Happiness</q>
+        </div>
+      
+        <div class="mySlides">
+          <q>Music is my Escape from Reality.</q>
+        </div>
+      
+      
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
